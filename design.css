@@ -87,3 +87,90 @@ body {
   margin: 0 auto;
   line-height: 1.4;
 }
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card Section */
+.card-section {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.eng-name {
+  font-size: 14px;
+  color: #555;
+}
+
+.number {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy-btn {
+  flex: 1;
+  margin-right: 5px;
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.call-btn {
+  flex: 1;
+  margin-left: 5px;
+  background: #0284c7;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
