@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  width: 100%;
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #064420;
+}
+
+.logo-section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.status-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.status-item {
+  background: #f1fdf6;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.copy-count {
+  background: green !important;
+  color: white !important;
+}
+
+
+/* Copy count hidden on mobile */
+@media (max-width: 600px) {
+  .copy-count {
+    display: none;
+  }
+}
